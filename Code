@@ -1,0 +1,25 @@
+c = 3*10**8 #3*10^8
+freqK = 10**3
+freqM = 10**6
+freqG = 10**9
+freq = 1
+frequency = float(0)
+lmdh = float(0)
+frq = int(input('Enter the frequency value:\n'))
+n = int(input('Enter the number, Giga = 9, Miga = 6, Kilo = 3, none? = 1\n'))
+if n==9:
+frequency = frq*freqG
+lmdh = c/frequency
+elif n==6:
+frequency = frq*freqM
+lmdh = c/frequency
+elif n==3:
+frequency = frq*freqK
+lmdh = c/frequency
+elif n==1:
+frequency = frq*freqG
+lmdh = c/frequency
+else:
+print('Wrong value, Exit\n')
+lmdh = 0
+print(f'minimum length of an antenna based on the frequency is {lmdh}\n')
